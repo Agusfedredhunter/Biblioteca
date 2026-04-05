@@ -1,5 +1,5 @@
-Trabajo practico 1 de Programacion
+# Trabjo Practico N° 1: Technova Solutions
+**Materia**
 
-Pagina web de un Gimnasio. 
 
-Mienbros:
+> .[!Integrantes].
