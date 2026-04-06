@@ -1,3 +1,4 @@
+<<<<<<< alumno_1_Fedigatti
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 
 :root {
@@ -380,4 +381,91 @@ textarea.form-control {
 
 .faq-answer {
   color: var(--text-secondary);
+=======
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: red;
+}
+
+/* NAV */
+nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* IMÁGENES */
+img {
+    border: 2px solid red;
+    margin-top: 10px;
+}
+
+/* BOTÓN */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: darkred;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+>>>>>>> dev
 }
