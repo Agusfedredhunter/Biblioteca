@@ -1,0 +1,29 @@
+{
+  "name": "helenic-works",
+  "version": "1.0.0",
+  "description": "API REST para Helenic Works",
+  "homepage": "https://github.com/Agusfedredhunter/Biblioteca#readme",
+  "bugs": {
+    "url": "https://github.com/Agusfedredhunter/Biblioteca/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agusfedredhunter/Biblioteca.git"
+  },
+  "license": "ISC",
+  "author": "joaquin",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+  "start": "node models/server.js",
+  "dev": "nodemon models/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
