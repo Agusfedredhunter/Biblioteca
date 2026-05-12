@@ -21,9 +21,9 @@ Se trabajó con ramas por integrante. Cada integrante creó su propia rama, real
 
 Distribución de archivos entre integrantes
 Integrante Archivos
-- Joaquin Pelizza: `app.js`, `models/server.js`, `routes/servicios.js`, `data/servicios.json` |
-- Integrante 2: `routes/equipo.js`, `data/equipo.json` |
-- Integrante 3: `routes/usuarios.js`, `data/usuarios.json` |
-- Integrante 4: `pages/servicios.html` |
-- Integrante 5: `pages/equipo.html` |
-- Integrante 6: `README.md`, `.gitignore`, `.env` |
+- Joaquin Pelizza: `app.js`, `models/server.js`, `routes/servicios.js`, `data/servicios.json`
+- Integrante 2: `routes/equipo.js`, `data/equipo.json`
+- Integrante 3: `routes/usuarios.js`, `data/usuarios.json`
+- Integrante 4: `pages/servicios.html`
+- Integrante 5: `pages/equipo.html`
+- Integrante 6: `README.md`, `.gitignore`, `.env`
