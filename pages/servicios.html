@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./equipo.html" >Equipo</a></li>
+                <li><a href="./equipo.html">Equipo</a></li>
                 <li><a href="./faq.html">Dudas Frecuentes</a></li>
                 <li><a href="./pedidos.html">Pedidos</a></li>
                 <li><a href="./servicios.html" class="active">Servicios</a></li>
@@ -28,41 +28,11 @@
         <section class="services-section">
             <h1 class="section-title">Nuestras <span>Clases</span></h1>
             <p class="section-subtitle">Opciones ajustadas a tus metas de hipertrofia o resistencia.</p>
-
-            <div class="grid-container">
-                <!-- Servicio Mínimo 1 -->
-                <div class="card">
-                    <img src="../assets/img/musculacion.png" alt="Área de Musculación">
-                    <div class="card-content">
-                        <h2 class="card-title">Musculación y Cross Training</h2>
-                        <p class="card-desc">Acceso libre al salón de pesas, máquinas guiadas y área de peso libre y funcional. Horario extendido y asistencia de pesas general.</p>
-                        <p class="card-price">$25,000 / mes</p>
-                    </div>
-                </div>
-
-                <!-- Servicio Mínimo 2 -->
-                <div class="card">
-                    <img src="../assets/img/hiit.png" alt="Área de HIIT">
-                    <div class="card-content">
-                        <h2 class="card-title">HIIT & BoxFuncional</h2>
-                        <p class="card-desc">Clases dirigidas de alta intensidad por intervalos para quemar calorías de forma extrema mientras desarrollas agilidad.</p>
-                        <p class="card-price">$22,000 / mes</p>
-                    </div>
-                </div>
-
-                <!-- Servicio Mínimo 3 -->
-                <div class="card">
-                    <img src="../assets/img/wellness.png" alt="Área de Recuperación">
-                    <div class="card-content">
-                        <h2 class="card-title">Zona Wellness y Recuperación</h2>
-                        <p class="card-desc">Yoga deportivo, elongación profunda y acceso a pistolas de masaje deportivo después del entrenamiento duro.</p>
-                        <p class="card-price">$18,000 / mes</p>
-                    </div>
-                </div>
+            <div class="grid-container" id="servicios-container">
+                <p>Cargando servicios...</p>
             </div>
-            
         </section>
-        
+
         <div style="text-align: center; margin-top: 48px;">
             <a href="./pedidos.html" class="btn">Contratar Plan Ahora</a>
         </div>
@@ -71,5 +41,35 @@
     <footer>
         <p>&copy; 2026 Gimnasio Helenic Works - Trabajo Práctico N°1 Programacion III - Grupo 15</p>
     </footer>
+
+    <script>
+        const API_URL = 'https://tp3-helenic-works.onrender.com';
+
+        const cargarServicios = async () => {
+            try {
+                const response = await fetch(`${API_URL}/servicios`);
+                const servicios = await response.json();
+                const container = document.getElementById('servicios-container');
+                container.innerHTML = '';
+                servicios.forEach(servicio => {
+                    container.innerHTML += `
+                        <div class="card">
+                            <img src="../assets/img/${servicio.imagen}" alt="${servicio.nombre}">
+                            <div class="card-content">
+                                <h2 class="card-title">${servicio.nombre}</h2>
+                                <p class="card-desc">${servicio.descripcion}</p>
+                                <p class="card-price">$${servicio.precio.toLocaleString()} / mes</p>
+                            </div>
+                        </div>
+                    `;
+                });
+            } catch (error) {
+                console.log(error);
+                document.getElementById('servicios-container').innerHTML = '<p>Error al cargar los servicios.</p>';
+            }
+        };
+
+        cargarServicios();
+    </script>
 </body>
 </html>
