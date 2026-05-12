@@ -28,6 +28,3 @@ Integrante Archivos
 - Integrante 4: `pages/servicios.html`
 - Integrante 5: `pages/equipo.html`
 - Integrante 6: `README.md`, `.gitignore`, `.env`
-=======
-
->>>>>>> ab3b378e6d262e6381da7289ded2ec1e8cb87cf8

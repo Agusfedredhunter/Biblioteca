@@ -1,4 +1,28 @@
 [
-  { "id": 1, "nombre": "Joaquin", "mail": "joaquin@mail.com", "fechaRegistro": "2025-01-15", "foto": "user.png", "ultimosPedidos": ["Plan Musculación", "Personal Trainer", "Evaluación Física"] },
-  { "id": 2, "nombre": "Agus", "mail": "agus@mail.com", "fechaRegistro": "2025-03-20", "foto": "user.png", "ultimosPedidos": ["Zumba", "Nutrición Deportiva", "Spinning"] }
+  {
+    "id": 1,
+    "nombre": "Joaquin",
+    "mail": "joaquin@mail.com",
+    "password": "1234",
+    "fechaRegistro": "2025-01-15",
+    "foto": "user.png",
+    "ultimosPedidos": [
+      "Plan Musculación",
+      "Personal Trainer",
+      "Evaluación Física"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Agus",
+    "mail": "agus@mail.com",
+    "password": "1234",
+    "fechaRegistro": "2025-03-20",
+    "foto": "user.png",
+    "ultimosPedidos": [
+      "Zumba",
+      "Nutrición Deportiva",
+      "Spinning"
+    ]
+  }
 ]
