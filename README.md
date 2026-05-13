@@ -11,12 +11,12 @@ Trabajo Práctico N°3 - Node.js, Express y Deploy en Render
 Grupo N°15
 
 | Integrante | Rama |
- Alumno 1  `rama-alumno1`
- Alumno 2  `alumno_2_Pelizza`
- Alumno 3  `rama-alumno3`
- Alumno 4  `rama-alumno4`
- Alumno 5  `rama-alumno5`
- Alumno 6  `rama-alumno6`
+ Alumno Fedigatti Augusto, rama `alumno_1_Fedigatti`
+ Alumno Pelizza Joaqui, rama `alumno_2_Pelizza`
+ Alumno Urdampilleta Iñaki, rama `alumno_3_Urdampilleta`
+ Alumno Lima Jesus, rama `alumno_4_Lima`
+ Alumno Moore Andy, rama `alumno_5_Moore`
+ Alumno Morel Ramiro, rama  `alumno_6_Morel`
 
 
 Descripción del Proyecto
