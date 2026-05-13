@@ -12,7 +12,7 @@ Grupo N°15
 
  Integrantes y sus ramas:  
  Alumno Fedigatti Augusto, rama `alumno_1_Fedigatti`
- Alumno Pelizza Joaqui, rama `alumno_2_Pelizza`
+ Alumno Pelizza Joaquin, rama `alumno_2_Pelizza`
  Alumno Urdampilleta Iñaki, rama `alumno_3_Urdampilleta`
  Alumno Lima Jesus, rama `alumno_4_Lima`
  Alumno Moore Andy, rama `alumno_5_Moore`
