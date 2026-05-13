@@ -11,13 +11,12 @@ Trabajo Práctico N°3 - Node.js, Express y Deploy en Render
 Grupo N°15
 
 | Integrante | Rama |
-|------------|------|
-| Alumno 1 | `rama-alumno1` |
-| Alumno 2 | `rama-alumno2` |
-| Alumno 3 | `rama-alumno3` |
-| Alumno 4 | `rama-alumno4` |
-| Alumno 5 | `rama-alumno5` |
-| Alumno 6 | `rama-alumno6` |
+ Alumno 1  `rama-alumno1`
+ Alumno 2  `alumno_2_Pelizza`
+ Alumno 3  `rama-alumno3`
+ Alumno 4  `rama-alumno4`
+ Alumno 5  `rama-alumno5`
+ Alumno 6  `rama-alumno6`
 
 
 Descripción del Proyecto
