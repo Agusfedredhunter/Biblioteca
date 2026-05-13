@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helenic Works | Inscripción</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/img/logo.png">
+            Helenic<span>Works</span>
+        </div>
+        <nav id="navegador">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./equipo.html" >Equipo</a></li>
+                <li><a href="./faq.html">Dudas Frecuentes</a></li>
+                <li><a href="./pedidos.html" class="active">Pedidos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inscription-section">
+            <h1 class="section-title">Únete a <span>Helenic Works</span></h1>
+            <p class="section-subtitle">Completa tu solicitud para empezar a entrenar hoy mismo.</p>
+
+            <div class="form-container">
+                <form action="#" method="get">
+                    <div class="form-group">
+                        <label for="nombre-completo">Nombre Completo</label>
+                        <input type="text" id="nombre-completo" name="nombre_completo" class="form-control" placeholder="Ej: Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Número de celular</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Ej: +54 9 11 1234-5678" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio-select">Plan de Entrenamiento (Servicio)</label>
+                        <select id="servicio-select" name="servicio" class="form-control" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="musculacion">Musculación y Cross Training</option>
+                            <option value="hiit">HIIT & BoxFuncional</option>
+                            <option value="wellness">Zona Wellness y Recuperación</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Turno preferido</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="turno-manana" name="turno" value="mañana" required>
+                                <label for="turno-manana" style="margin: 0; font-weight: normal;">Mañana</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="turno-tarde" name="turno" value="tarde">
+                                <label for="turno-tarde" style="margin: 0; font-weight: normal;">Tarde</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="turno-noche" name="turno" value="noche">
+                                <label for="turno-noche" style="margin: 0; font-weight: normal;">Noche</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Servicios Extra (Opcional)</label>
+                        <div class="checkbox-group" style="flex-direction: column; align-items: flex-start;">
+                            <div class="radio-item">
+                                <input type="checkbox" id="extra-locker" name="extra" value="locker">
+                                <label for="extra-locker" style="margin: 0; font-weight: normal;">Locker fijo mensual</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="checkbox" id="extra-nutricionista" name="extra" value="nutricionista">
+                                <label for="extra-nutricionista" style="margin: 0; font-weight: normal;">Plan nutricional con especialista</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fecha -->
+                    <div class="form-group">
+                        <label for="fecha-inicio">Fecha de inicio esperada</label>
+                        <input type="date" id="fecha-inicio" name="fecha_inicio" class="form-control" required>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios u Objetivos Médicos (Opcional)</label>
+                        <textarea id="comentarios" name="comentarios" class="form-control" placeholder="Cuéntanos si tienes alguna lesión previa o qué objetivos quieres lograr..."></textarea>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Enviar Solicitud</button>
+                        <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gimnasio Helenic Works - Trabajo Práctico N°1 Programacion III - Grupo 15</p>
+    </footer>
+</body>
+</html> 
