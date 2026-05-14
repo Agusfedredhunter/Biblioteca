@@ -23,7 +23,7 @@ Descripción del Proyecto
 
 Helenic Works es una API REST desarrollada con Node.js y Express para el gimnasio del mismo nombre. Provee endpoints para consultar servicios, integrantes del equipo y gestión de usuarios. El front-end está desplegado en GitHub Pages y consume los datos directamente desde la API alojada en Render.com.
 
-- Front-end (GitHub Pages): 
+- Front-end (GitHub Pages): https://agusfedredhunter.github.io/Biblioteca/
 - Back-end (Render): https://bliblioteca.onrender.com
 
 
