@@ -1,0 +1,16 @@
+[
+  { "id": 1, "nombre": "Musculación y Cross Training", "descripcion": "Acceso libre al salón de pesas, máquinas guiadas y área de peso libre y funcional.", "precio": 25000, "imagen": "musculacion.png" },
+  { "id": 2, "nombre": "HIIT & Box Funcional", "descripcion": "Clases dirigidas de alta intensidad por intervalos para quemar calorías y desarrollar agilidad.", "precio": 22000, "imagen": "hiit.png" },
+  { "id": 3, "nombre": "Zona Wellness y Recuperación", "descripcion": "Yoga deportivo, elongación profunda y acceso a pistolas de masaje deportivo.", "precio": 18000, "imagen": "wellness.png" },
+  { "id": 4, "nombre": "Pilates Reformer", "descripcion": "Clases de pilates con máquina reformer para mejorar la postura y la fuerza del core.", "precio": 20000, "imagen": "services.png" },
+  { "id": 5, "nombre": "Spinning", "descripcion": "Clases de ciclismo indoor con música y ritmo intenso para trabajar la resistencia cardiovascular.", "precio": 19000, "imagen": "services.png" },
+  { "id": 6, "nombre": "Natación", "descripcion": "Clases de natación para todos los niveles, desde principiantes hasta avanzados.", "precio": 23000, "imagen": "services.png" },
+  { "id": 7, "nombre": "Boxeo", "descripcion": "Entrenamiento de boxeo técnico y físico con guantes, bolsa y sparring controlado.", "precio": 21000, "imagen": "services.png" },
+  { "id": 8, "nombre": "Zumba", "descripcion": "Baile fitness de alta energía con ritmos latinos para quemar calorías divirtiéndote.", "precio": 17000, "imagen": "services.png" },
+  { "id": 9, "nombre": "Funcional en grupo", "descripcion": "Entrenamiento funcional en grupos reducidos con circuitos variados y progresivos.", "precio": 20000, "imagen": "services.png" },
+  { "id": 10, "nombre": "Personal Trainer", "descripcion": "Sesiones individuales con un entrenador personal para alcanzar tus objetivos más rápido.", "precio": 35000, "imagen": "trainer.png" },
+  { "id": 11, "nombre": "Nutrición Deportiva", "descripcion": "Consultas con nutricionista especializada en deporte para optimizar tu rendimiento.", "precio": 15000, "imagen": "services.png" },
+  { "id": 12, "nombre": "Evaluación Física", "descripcion": "Medición completa de composición corporal, fuerza y resistencia para planificar tu progreso.", "precio": 10000, "imagen": "services.png" },
+  { "id": 13, "nombre": "Kickboxing", "descripcion": "Combinación de boxeo y patadas para un entrenamiento completo de cuerpo y mente.", "precio": 21000, "imagen": "services.png" },
+  { "id": 14, "nombre": "Meditación y Mindfulness", "descripcion": "Sesiones de meditación guiada para reducir el estrés y mejorar la concentración.", "precio": 16000, "imagen": "wellness.png" }
+]
