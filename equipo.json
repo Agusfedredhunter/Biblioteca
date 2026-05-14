@@ -1,5 +1,0 @@
-[
-  { "id": 1, "nombre": "Marcos S.", "rol": "Head Coach & Musculación", "descripcion": "Especialista en hipertrofia y periodización del entrenamiento. Más de 10 años desarrollando atletas naturales.", "imagen": "trainer.png" },
-  { "id": 2, "nombre": "Elena T.", "rol": "Preparadora Física Crossfit", "descripcion": "Licenciada en Educación Física y coach certificada nivel 2. Destruye tus límites y enfócate en tu fuerza.", "imagen": "trainer.png" },
-  { "id": 3, "nombre": "Leandro F.", "rol": "Recuperación y Funcional", "descripcion": "Fisioterapeuta deportivo experto en prevención de lesiones y corrección postural.", "imagen": "trainer.png" }
-]
