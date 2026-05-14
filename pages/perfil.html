@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helenic Works | Mi Perfil</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/img/logo.png">
+            Helenic<span>Works</span>
+        </div>
+        <nav id="navegador">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./equipo.html">Equipo</a></li>
+                <li><a href="./faq.html">Dudas Frecuentes</a></li>
+                <li><a href="./pedidos.html">Pedidos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div style="max-width: 600px; margin: 60px auto; padding: 40px; background: #1a1a1a; border-radius: 12px;">
+            <h1 style="text-align: center; margin-bottom: 32px;">Panel de <span style="color: var(--color-primary, #e63946);">Usuario</span></h1>
+
+            <div id="cargando" style="text-align: center;">Cargando perfil...</div>
+
+            <div id="perfil-contenido" style="display: none;">
+                <div style="text-align: center; margin-bottom: 24px;">
+                    <img src="../assets/img/trainer.png" alt="Foto de perfil" style="width: 100px; border-radius: 50%;">
+                    <h2 id="perfil-nombre" style="margin-top: 12px;"></h2>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+                    <p><b>Email:</b> <span id="perfil-email"></span></p>
+                    <p><b>Miembro desde:</b> <span id="perfil-fecha"></span></p>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 12px;">Últimos pedidos</h3>
+                    <ul id="perfil-pedidos" style="list-style: none; display: flex; flex-direction: column; gap: 8px;"></ul>
+                </div>
+                <button class="btn" onclick="window.location.href='./login.html'" style="margin-top: 24px; width: 100%;">Cerrar sesión</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gimnasio Helenic Works - Trabajo Práctico N°1 Programacion III - Grupo 15</p>
+    </footer>
+
+    <script>
+        const API_URL = 'https://tp3-helenic-works.onrender.com';
+
+        const cargarPerfil = async () => {
+            const usuarioId = localStorage.getItem('usuarioId') || 1;
+
+            try {
+                const response = await fetch(`${API_URL}/perfil/${usuarioId}`);
+                const usuario = await response.json();
+
+                document.getElementById('perfil-nombre').textContent = `Hola, ${usuario.nombre} 👋`;
+                document.getElementById('perfil-email').textContent = usuario.mail;
+                document.getElementById('perfil-fecha').textContent = usuario.fechaRegistro;
+
+                const listaPedidos = document.getElementById('perfil-pedidos');
+                usuario.ultimosPedidos.forEach(pedido => {
+                    listaPedidos.innerHTML += `<li>🏋️ ${pedido}</li>`;
+                });
+
+                document.getElementById('cargando').style.display = 'none';
+                document.getElementById('perfil-contenido').style.display = 'block';
+            } catch (error) {
+                console.log(error);
+                document.getElementById('cargando').textContent = 'Error al cargar el perfil.';
+            }
+        };
+
+        cargarPerfil();
+    </script>
+</body>
+</html>
